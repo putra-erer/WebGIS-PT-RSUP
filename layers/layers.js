@@ -1,0 +1,482 @@
+var wms_layers = [];
+
+
+        var lyr_OpenTopoMap_0 = new ol.layer.Tile({
+            'title': 'OpenTopoMap',
+            'type':'base',
+            'opacity': 1.000000,
+            
+            
+            source: new ol.source.XYZ({
+            attributions: '<a href="https://www.openstreetmap.org/copyright">Kartendaten: © OpenStreetMap-Mitwirkende, SRTM | Kartendarstellung: © OpenTopoMap (CC-BY-SA)</a>',
+                url: 'https://a.tile.opentopomap.org/{z}/{x}/{y}.png'
+            })
+        });
+var format_AnalisaTanahPTersedia_1 = new ol.format.GeoJSON();
+var features_AnalisaTanahPTersedia_1 = format_AnalisaTanahPTersedia_1.readFeatures(json_AnalisaTanahPTersedia_1, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_AnalisaTanahPTersedia_1 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_AnalisaTanahPTersedia_1.addFeatures(features_AnalisaTanahPTersedia_1);
+var lyr_AnalisaTanahPTersedia_1 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_AnalisaTanahPTersedia_1, 
+                style: style_AnalisaTanahPTersedia_1,
+                popuplayertitle: 'Analisa Tanah P-Tersedia',
+                interactive: true,
+    title: 'Analisa Tanah P-Tersedia<br />\
+    <img src="styles/legend/AnalisaTanahPTersedia_1_0.png" /> 1<br />\
+    <img src="styles/legend/AnalisaTanahPTersedia_1_1.png" /> 4<br />\
+    <img src="styles/legend/AnalisaTanahPTersedia_1_2.png" /> 2<br />\
+    <img src="styles/legend/AnalisaTanahPTersedia_1_3.png" /> 3<br />\
+    <img src="styles/legend/AnalisaTanahPTersedia_1_4.png" /> <br />' });
+var format_AnalisaTanahPTot_2 = new ol.format.GeoJSON();
+var features_AnalisaTanahPTot_2 = format_AnalisaTanahPTot_2.readFeatures(json_AnalisaTanahPTot_2, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_AnalisaTanahPTot_2 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_AnalisaTanahPTot_2.addFeatures(features_AnalisaTanahPTot_2);
+var lyr_AnalisaTanahPTot_2 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_AnalisaTanahPTot_2, 
+                style: style_AnalisaTanahPTot_2,
+                popuplayertitle: 'Analisa Tanah P-Tot',
+                interactive: true,
+    title: 'Analisa Tanah P-Tot<br />\
+    <img src="styles/legend/AnalisaTanahPTot_2_0.png" /> 1<br />\
+    <img src="styles/legend/AnalisaTanahPTot_2_1.png" /> 4<br />\
+    <img src="styles/legend/AnalisaTanahPTot_2_2.png" /> 2<br />\
+    <img src="styles/legend/AnalisaTanahPTot_2_3.png" /> 3<br />\
+    <img src="styles/legend/AnalisaTanahPTot_2_4.png" /> <br />' });
+var format_AnalisaTanahpHH2O_3 = new ol.format.GeoJSON();
+var features_AnalisaTanahpHH2O_3 = format_AnalisaTanahpHH2O_3.readFeatures(json_AnalisaTanahpHH2O_3, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_AnalisaTanahpHH2O_3 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_AnalisaTanahpHH2O_3.addFeatures(features_AnalisaTanahpHH2O_3);
+var lyr_AnalisaTanahpHH2O_3 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_AnalisaTanahpHH2O_3, 
+                style: style_AnalisaTanahpHH2O_3,
+                popuplayertitle: 'Analisa Tanah pH H2O',
+                interactive: true,
+    title: 'Analisa Tanah pH H2O<br />\
+    <img src="styles/legend/AnalisaTanahpHH2O_3_0.png" /> 1<br />\
+    <img src="styles/legend/AnalisaTanahpHH2O_3_1.png" /> 4<br />\
+    <img src="styles/legend/AnalisaTanahpHH2O_3_2.png" /> 2<br />\
+    <img src="styles/legend/AnalisaTanahpHH2O_3_3.png" /> 3<br />\
+    <img src="styles/legend/AnalisaTanahpHH2O_3_4.png" /> <br />' });
+var format_AnalisaTanahKTot_4 = new ol.format.GeoJSON();
+var features_AnalisaTanahKTot_4 = format_AnalisaTanahKTot_4.readFeatures(json_AnalisaTanahKTot_4, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_AnalisaTanahKTot_4 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_AnalisaTanahKTot_4.addFeatures(features_AnalisaTanahKTot_4);
+var lyr_AnalisaTanahKTot_4 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_AnalisaTanahKTot_4, 
+                style: style_AnalisaTanahKTot_4,
+                popuplayertitle: 'Analisa Tanah K-Tot',
+                interactive: true,
+    title: 'Analisa Tanah K-Tot<br />\
+    <img src="styles/legend/AnalisaTanahKTot_4_0.png" /> 1<br />\
+    <img src="styles/legend/AnalisaTanahKTot_4_1.png" /> 4<br />\
+    <img src="styles/legend/AnalisaTanahKTot_4_2.png" /> 2<br />\
+    <img src="styles/legend/AnalisaTanahKTot_4_3.png" /> 3<br />\
+    <img src="styles/legend/AnalisaTanahKTot_4_4.png" /> <br />' });
+var format_AnalisaTanahK_5 = new ol.format.GeoJSON();
+var features_AnalisaTanahK_5 = format_AnalisaTanahK_5.readFeatures(json_AnalisaTanahK_5, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_AnalisaTanahK_5 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_AnalisaTanahK_5.addFeatures(features_AnalisaTanahK_5);
+var lyr_AnalisaTanahK_5 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_AnalisaTanahK_5, 
+                style: style_AnalisaTanahK_5,
+                popuplayertitle: 'Analisa Tanah K',
+                interactive: true,
+    title: 'Analisa Tanah K<br />\
+    <img src="styles/legend/AnalisaTanahK_5_0.png" /> 1<br />\
+    <img src="styles/legend/AnalisaTanahK_5_1.png" /> 4<br />\
+    <img src="styles/legend/AnalisaTanahK_5_2.png" /> 2<br />\
+    <img src="styles/legend/AnalisaTanahK_5_3.png" /> 3<br />\
+    <img src="styles/legend/AnalisaTanahK_5_4.png" /> <br />' });
+var format_AnalisaTanahMg_6 = new ol.format.GeoJSON();
+var features_AnalisaTanahMg_6 = format_AnalisaTanahMg_6.readFeatures(json_AnalisaTanahMg_6, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_AnalisaTanahMg_6 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_AnalisaTanahMg_6.addFeatures(features_AnalisaTanahMg_6);
+var lyr_AnalisaTanahMg_6 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_AnalisaTanahMg_6, 
+                style: style_AnalisaTanahMg_6,
+                popuplayertitle: 'Analisa Tanah Mg',
+                interactive: true,
+    title: 'Analisa Tanah Mg<br />\
+    <img src="styles/legend/AnalisaTanahMg_6_0.png" /> 1<br />\
+    <img src="styles/legend/AnalisaTanahMg_6_1.png" /> 4<br />\
+    <img src="styles/legend/AnalisaTanahMg_6_2.png" /> 2<br />\
+    <img src="styles/legend/AnalisaTanahMg_6_3.png" /> 3<br />\
+    <img src="styles/legend/AnalisaTanahMg_6_4.png" /> <br />' });
+var format_AnalisaTanahCa_7 = new ol.format.GeoJSON();
+var features_AnalisaTanahCa_7 = format_AnalisaTanahCa_7.readFeatures(json_AnalisaTanahCa_7, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_AnalisaTanahCa_7 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_AnalisaTanahCa_7.addFeatures(features_AnalisaTanahCa_7);
+var lyr_AnalisaTanahCa_7 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_AnalisaTanahCa_7, 
+                style: style_AnalisaTanahCa_7,
+                popuplayertitle: 'Analisa Tanah Ca',
+                interactive: true,
+    title: 'Analisa Tanah Ca<br />\
+    <img src="styles/legend/AnalisaTanahCa_7_0.png" /> 1<br />\
+    <img src="styles/legend/AnalisaTanahCa_7_1.png" /> 4<br />\
+    <img src="styles/legend/AnalisaTanahCa_7_2.png" /> 2<br />\
+    <img src="styles/legend/AnalisaTanahCa_7_3.png" /> 3<br />\
+    <img src="styles/legend/AnalisaTanahCa_7_4.png" /> <br />' });
+var format_AnalisaTanahCEC_8 = new ol.format.GeoJSON();
+var features_AnalisaTanahCEC_8 = format_AnalisaTanahCEC_8.readFeatures(json_AnalisaTanahCEC_8, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_AnalisaTanahCEC_8 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_AnalisaTanahCEC_8.addFeatures(features_AnalisaTanahCEC_8);
+var lyr_AnalisaTanahCEC_8 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_AnalisaTanahCEC_8, 
+                style: style_AnalisaTanahCEC_8,
+                popuplayertitle: 'Analisa Tanah CEC',
+                interactive: true,
+    title: 'Analisa Tanah CEC<br />\
+    <img src="styles/legend/AnalisaTanahCEC_8_0.png" /> 1<br />\
+    <img src="styles/legend/AnalisaTanahCEC_8_1.png" /> 4<br />\
+    <img src="styles/legend/AnalisaTanahCEC_8_2.png" /> 2<br />\
+    <img src="styles/legend/AnalisaTanahCEC_8_3.png" /> 3<br />\
+    <img src="styles/legend/AnalisaTanahCEC_8_4.png" /> <br />' });
+var format_AnalisaTanahCN_9 = new ol.format.GeoJSON();
+var features_AnalisaTanahCN_9 = format_AnalisaTanahCN_9.readFeatures(json_AnalisaTanahCN_9, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_AnalisaTanahCN_9 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_AnalisaTanahCN_9.addFeatures(features_AnalisaTanahCN_9);
+var lyr_AnalisaTanahCN_9 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_AnalisaTanahCN_9, 
+                style: style_AnalisaTanahCN_9,
+                popuplayertitle: 'Analisa Tanah C-N',
+                interactive: true,
+    title: 'Analisa Tanah C-N<br />\
+    <img src="styles/legend/AnalisaTanahCN_9_0.png" /> 1<br />\
+    <img src="styles/legend/AnalisaTanahCN_9_1.png" /> 4<br />\
+    <img src="styles/legend/AnalisaTanahCN_9_2.png" /> 2<br />\
+    <img src="styles/legend/AnalisaTanahCN_9_3.png" /> 3<br />\
+    <img src="styles/legend/AnalisaTanahCN_9_4.png" /> <br />' });
+var format_AnalisaTanahOrgC_10 = new ol.format.GeoJSON();
+var features_AnalisaTanahOrgC_10 = format_AnalisaTanahOrgC_10.readFeatures(json_AnalisaTanahOrgC_10, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_AnalisaTanahOrgC_10 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_AnalisaTanahOrgC_10.addFeatures(features_AnalisaTanahOrgC_10);
+var lyr_AnalisaTanahOrgC_10 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_AnalisaTanahOrgC_10, 
+                style: style_AnalisaTanahOrgC_10,
+                popuplayertitle: 'Analisa Tanah Org.C',
+                interactive: true,
+    title: 'Analisa Tanah Org.C<br />\
+    <img src="styles/legend/AnalisaTanahOrgC_10_0.png" /> 1<br />\
+    <img src="styles/legend/AnalisaTanahOrgC_10_1.png" /> 4<br />\
+    <img src="styles/legend/AnalisaTanahOrgC_10_2.png" /> 2<br />\
+    <img src="styles/legend/AnalisaTanahOrgC_10_3.png" /> 3<br />\
+    <img src="styles/legend/AnalisaTanahOrgC_10_4.png" /> <br />' });
+var format_AnalisaTanahN_11 = new ol.format.GeoJSON();
+var features_AnalisaTanahN_11 = format_AnalisaTanahN_11.readFeatures(json_AnalisaTanahN_11, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_AnalisaTanahN_11 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_AnalisaTanahN_11.addFeatures(features_AnalisaTanahN_11);
+var lyr_AnalisaTanahN_11 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_AnalisaTanahN_11, 
+                style: style_AnalisaTanahN_11,
+                popuplayertitle: 'Analisa Tanah N',
+                interactive: true,
+    title: 'Analisa Tanah N<br />\
+    <img src="styles/legend/AnalisaTanahN_11_0.png" /> 1<br />\
+    <img src="styles/legend/AnalisaTanahN_11_1.png" /> 4<br />\
+    <img src="styles/legend/AnalisaTanahN_11_2.png" /> 2<br />\
+    <img src="styles/legend/AnalisaTanahN_11_3.png" /> 3<br />\
+    <img src="styles/legend/AnalisaTanahN_11_4.png" /> <br />' });
+var format_AnalisaDaunFe_12 = new ol.format.GeoJSON();
+var features_AnalisaDaunFe_12 = format_AnalisaDaunFe_12.readFeatures(json_AnalisaDaunFe_12, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_AnalisaDaunFe_12 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_AnalisaDaunFe_12.addFeatures(features_AnalisaDaunFe_12);
+var lyr_AnalisaDaunFe_12 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_AnalisaDaunFe_12, 
+                style: style_AnalisaDaunFe_12,
+                popuplayertitle: 'Analisa Daun Fe',
+                interactive: true,
+    title: 'Analisa Daun Fe<br />\
+    <img src="styles/legend/AnalisaDaunFe_12_0.png" /> 1<br />\
+    <img src="styles/legend/AnalisaDaunFe_12_1.png" /> 4<br />\
+    <img src="styles/legend/AnalisaDaunFe_12_2.png" /> 2<br />\
+    <img src="styles/legend/AnalisaDaunFe_12_3.png" /> 3<br />\
+    <img src="styles/legend/AnalisaDaunFe_12_4.png" /> <br />' });
+var format_AnalisaDaunZn_13 = new ol.format.GeoJSON();
+var features_AnalisaDaunZn_13 = format_AnalisaDaunZn_13.readFeatures(json_AnalisaDaunZn_13, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_AnalisaDaunZn_13 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_AnalisaDaunZn_13.addFeatures(features_AnalisaDaunZn_13);
+var lyr_AnalisaDaunZn_13 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_AnalisaDaunZn_13, 
+                style: style_AnalisaDaunZn_13,
+                popuplayertitle: 'Analisa Daun Zn',
+                interactive: true,
+    title: 'Analisa Daun Zn<br />\
+    <img src="styles/legend/AnalisaDaunZn_13_0.png" /> 1<br />\
+    <img src="styles/legend/AnalisaDaunZn_13_1.png" /> 4<br />\
+    <img src="styles/legend/AnalisaDaunZn_13_2.png" /> 2<br />\
+    <img src="styles/legend/AnalisaDaunZn_13_3.png" /> 3<br />\
+    <img src="styles/legend/AnalisaDaunZn_13_4.png" /> <br />' });
+var format_AnalisaDaunCu_14 = new ol.format.GeoJSON();
+var features_AnalisaDaunCu_14 = format_AnalisaDaunCu_14.readFeatures(json_AnalisaDaunCu_14, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_AnalisaDaunCu_14 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_AnalisaDaunCu_14.addFeatures(features_AnalisaDaunCu_14);
+var lyr_AnalisaDaunCu_14 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_AnalisaDaunCu_14, 
+                style: style_AnalisaDaunCu_14,
+                popuplayertitle: 'Analisa Daun Cu',
+                interactive: true,
+    title: 'Analisa Daun Cu<br />\
+    <img src="styles/legend/AnalisaDaunCu_14_0.png" /> 1<br />\
+    <img src="styles/legend/AnalisaDaunCu_14_1.png" /> 4<br />\
+    <img src="styles/legend/AnalisaDaunCu_14_2.png" /> 2<br />\
+    <img src="styles/legend/AnalisaDaunCu_14_3.png" /> 3<br />\
+    <img src="styles/legend/AnalisaDaunCu_14_4.png" /> <br />' });
+var format_AnalisaDaunB_15 = new ol.format.GeoJSON();
+var features_AnalisaDaunB_15 = format_AnalisaDaunB_15.readFeatures(json_AnalisaDaunB_15, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_AnalisaDaunB_15 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_AnalisaDaunB_15.addFeatures(features_AnalisaDaunB_15);
+var lyr_AnalisaDaunB_15 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_AnalisaDaunB_15, 
+                style: style_AnalisaDaunB_15,
+                popuplayertitle: 'Analisa Daun B',
+                interactive: true,
+    title: 'Analisa Daun B<br />\
+    <img src="styles/legend/AnalisaDaunB_15_0.png" /> 1<br />\
+    <img src="styles/legend/AnalisaDaunB_15_1.png" /> 4<br />\
+    <img src="styles/legend/AnalisaDaunB_15_2.png" /> 2<br />\
+    <img src="styles/legend/AnalisaDaunB_15_3.png" /> 3<br />\
+    <img src="styles/legend/AnalisaDaunB_15_4.png" /> <br />' });
+var format_AnalisaDaunMg_16 = new ol.format.GeoJSON();
+var features_AnalisaDaunMg_16 = format_AnalisaDaunMg_16.readFeatures(json_AnalisaDaunMg_16, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_AnalisaDaunMg_16 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_AnalisaDaunMg_16.addFeatures(features_AnalisaDaunMg_16);
+var lyr_AnalisaDaunMg_16 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_AnalisaDaunMg_16, 
+                style: style_AnalisaDaunMg_16,
+                popuplayertitle: 'Analisa Daun Mg',
+                interactive: true,
+    title: 'Analisa Daun Mg<br />\
+    <img src="styles/legend/AnalisaDaunMg_16_0.png" /> 1<br />\
+    <img src="styles/legend/AnalisaDaunMg_16_1.png" /> 4<br />\
+    <img src="styles/legend/AnalisaDaunMg_16_2.png" /> 2<br />\
+    <img src="styles/legend/AnalisaDaunMg_16_3.png" /> 3<br />\
+    <img src="styles/legend/AnalisaDaunMg_16_4.png" /> <br />' });
+var format_AnalisaDaunK_17 = new ol.format.GeoJSON();
+var features_AnalisaDaunK_17 = format_AnalisaDaunK_17.readFeatures(json_AnalisaDaunK_17, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_AnalisaDaunK_17 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_AnalisaDaunK_17.addFeatures(features_AnalisaDaunK_17);
+var lyr_AnalisaDaunK_17 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_AnalisaDaunK_17, 
+                style: style_AnalisaDaunK_17,
+                popuplayertitle: 'Analisa Daun K',
+                interactive: true,
+    title: 'Analisa Daun K<br />\
+    <img src="styles/legend/AnalisaDaunK_17_0.png" /> 1<br />\
+    <img src="styles/legend/AnalisaDaunK_17_1.png" /> 4<br />\
+    <img src="styles/legend/AnalisaDaunK_17_2.png" /> 2<br />\
+    <img src="styles/legend/AnalisaDaunK_17_3.png" /> 3<br />\
+    <img src="styles/legend/AnalisaDaunK_17_4.png" /> <br />' });
+var format_AnalisaDaunP_18 = new ol.format.GeoJSON();
+var features_AnalisaDaunP_18 = format_AnalisaDaunP_18.readFeatures(json_AnalisaDaunP_18, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_AnalisaDaunP_18 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_AnalisaDaunP_18.addFeatures(features_AnalisaDaunP_18);
+var lyr_AnalisaDaunP_18 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_AnalisaDaunP_18, 
+                style: style_AnalisaDaunP_18,
+                popuplayertitle: 'Analisa Daun P',
+                interactive: true,
+    title: 'Analisa Daun P<br />\
+    <img src="styles/legend/AnalisaDaunP_18_0.png" /> 1<br />\
+    <img src="styles/legend/AnalisaDaunP_18_1.png" /> 4<br />\
+    <img src="styles/legend/AnalisaDaunP_18_2.png" /> 2<br />\
+    <img src="styles/legend/AnalisaDaunP_18_3.png" /> 3<br />\
+    <img src="styles/legend/AnalisaDaunP_18_4.png" /> <br />' });
+var format_AnalisaDaunN_19 = new ol.format.GeoJSON();
+var features_AnalisaDaunN_19 = format_AnalisaDaunN_19.readFeatures(json_AnalisaDaunN_19, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_AnalisaDaunN_19 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_AnalisaDaunN_19.addFeatures(features_AnalisaDaunN_19);
+var lyr_AnalisaDaunN_19 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_AnalisaDaunN_19, 
+                style: style_AnalisaDaunN_19,
+                popuplayertitle: 'Analisa Daun N',
+                interactive: true,
+    title: 'Analisa Daun N<br />\
+    <img src="styles/legend/AnalisaDaunN_19_0.png" /> 1<br />\
+    <img src="styles/legend/AnalisaDaunN_19_1.png" /> 4<br />\
+    <img src="styles/legend/AnalisaDaunN_19_2.png" /> 2<br />\
+    <img src="styles/legend/AnalisaDaunN_19_3.png" /> 3<br />\
+    <img src="styles/legend/AnalisaDaunN_19_4.png" /> <br />' });
+var format_LAPORANRUTINBatasWilayah_20 = new ol.format.GeoJSON();
+var features_LAPORANRUTINBatasWilayah_20 = format_LAPORANRUTINBatasWilayah_20.readFeatures(json_LAPORANRUTINBatasWilayah_20, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_LAPORANRUTINBatasWilayah_20 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_LAPORANRUTINBatasWilayah_20.addFeatures(features_LAPORANRUTINBatasWilayah_20);
+var lyr_LAPORANRUTINBatasWilayah_20 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_LAPORANRUTINBatasWilayah_20, 
+                style: style_LAPORANRUTINBatasWilayah_20,
+                popuplayertitle: 'LAPORAN RUTIN — Batas Wilayah',
+                interactive: true,
+                title: '<img src="styles/legend/LAPORANRUTINBatasWilayah_20.png" /> LAPORAN RUTIN — Batas Wilayah'
+            });
+var format_LAPORANRUTINAreaHCVRSUPPKB_21 = new ol.format.GeoJSON();
+var features_LAPORANRUTINAreaHCVRSUPPKB_21 = format_LAPORANRUTINAreaHCVRSUPPKB_21.readFeatures(json_LAPORANRUTINAreaHCVRSUPPKB_21, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_LAPORANRUTINAreaHCVRSUPPKB_21 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_LAPORANRUTINAreaHCVRSUPPKB_21.addFeatures(features_LAPORANRUTINAreaHCVRSUPPKB_21);
+var lyr_LAPORANRUTINAreaHCVRSUPPKB_21 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_LAPORANRUTINAreaHCVRSUPPKB_21, 
+                style: style_LAPORANRUTINAreaHCVRSUPPKB_21,
+                popuplayertitle: 'LAPORAN RUTIN — Area HCV RSUP-PKB',
+                interactive: true,
+                title: '<img src="styles/legend/LAPORANRUTINAreaHCVRSUPPKB_21.png" /> LAPORAN RUTIN — Area HCV RSUP-PKB'
+            });
+var group_AnalisaDaun = new ol.layer.Group({
+                                layers: [lyr_AnalisaDaunFe_12,lyr_AnalisaDaunZn_13,lyr_AnalisaDaunCu_14,lyr_AnalisaDaunB_15,lyr_AnalisaDaunMg_16,lyr_AnalisaDaunK_17,lyr_AnalisaDaunP_18,lyr_AnalisaDaunN_19,],
+                                fold: 'close',
+                                title: 'Analisa Daun'});
+var group_AnalisaTanah = new ol.layer.Group({
+                                layers: [lyr_AnalisaTanahPTersedia_1,lyr_AnalisaTanahPTot_2,lyr_AnalisaTanahpHH2O_3,lyr_AnalisaTanahKTot_4,lyr_AnalisaTanahK_5,lyr_AnalisaTanahMg_6,lyr_AnalisaTanahCa_7,lyr_AnalisaTanahCEC_8,lyr_AnalisaTanahCN_9,lyr_AnalisaTanahOrgC_10,lyr_AnalisaTanahN_11,],
+                                fold: 'close',
+                                title: 'Analisa Tanah'});
+
+lyr_OpenTopoMap_0.setVisible(true);lyr_AnalisaTanahPTersedia_1.setVisible(true);lyr_AnalisaTanahPTot_2.setVisible(true);lyr_AnalisaTanahpHH2O_3.setVisible(true);lyr_AnalisaTanahKTot_4.setVisible(true);lyr_AnalisaTanahK_5.setVisible(true);lyr_AnalisaTanahMg_6.setVisible(true);lyr_AnalisaTanahCa_7.setVisible(true);lyr_AnalisaTanahCEC_8.setVisible(true);lyr_AnalisaTanahCN_9.setVisible(true);lyr_AnalisaTanahOrgC_10.setVisible(true);lyr_AnalisaTanahN_11.setVisible(true);lyr_AnalisaDaunFe_12.setVisible(true);lyr_AnalisaDaunZn_13.setVisible(true);lyr_AnalisaDaunCu_14.setVisible(true);lyr_AnalisaDaunB_15.setVisible(true);lyr_AnalisaDaunMg_16.setVisible(true);lyr_AnalisaDaunK_17.setVisible(true);lyr_AnalisaDaunP_18.setVisible(true);lyr_AnalisaDaunN_19.setVisible(true);lyr_LAPORANRUTINBatasWilayah_20.setVisible(true);lyr_LAPORANRUTINAreaHCVRSUPPKB_21.setVisible(true);
+var layersList = [lyr_OpenTopoMap_0,group_AnalisaTanah,group_AnalisaDaun,lyr_LAPORANRUTINBatasWilayah_20,lyr_LAPORANRUTINAreaHCVRSUPPKB_21];
+lyr_AnalisaTanahPTersedia_1.set('fieldAliases', {'fid': 'fid', 'Id': 'Id', 'Persil': 'Persil', 'Divisi': 'Divisi', 'Wilayah': 'Wilayah', 'kode_join': 'kode_join', 'LUAS': 'LUAS', 'Ferotrap': 'Ferotrap', 'poi': 'poi', 'DN N': 'DN N', 'DN P': 'DN P', 'DN K': 'DN K', 'DN Mg': 'DN Mg', 'DN B': 'DN B', 'DN Cu': 'DN Cu', 'DN Zn': 'DN Zn', 'DN Fe': 'DN Fe', 'TN N': 'TN N', 'TN OrgC': 'TN OrgC', 'TN C/N': 'TN C/N', 'TN CEC': 'TN CEC', 'TN Mg': 'TN Mg', 'TN K': 'TN K', 'TN K-Tot': 'TN K-Tot', 'TN pH H2O': 'TN pH H2O', 'TN P-Terse': 'TN P-Terse', 'TN P-Tot': 'TN P-Tot', 'kodeJOIN': 'kodeJOIN', 'TN Ca': 'TN Ca', });
+lyr_AnalisaTanahPTot_2.set('fieldAliases', {'fid': 'fid', 'Id': 'Id', 'Persil': 'Persil', 'Divisi': 'Divisi', 'Wilayah': 'Wilayah', 'kode_join': 'kode_join', 'LUAS': 'LUAS', 'Ferotrap': 'Ferotrap', 'poi': 'poi', 'DN N': 'DN N', 'DN P': 'DN P', 'DN K': 'DN K', 'DN Mg': 'DN Mg', 'DN B': 'DN B', 'DN Cu': 'DN Cu', 'DN Zn': 'DN Zn', 'DN Fe': 'DN Fe', 'TN N': 'TN N', 'TN OrgC': 'TN OrgC', 'TN C/N': 'TN C/N', 'TN CEC': 'TN CEC', 'TN Mg': 'TN Mg', 'TN K': 'TN K', 'TN K-Tot': 'TN K-Tot', 'TN pH H2O': 'TN pH H2O', 'TN P-Terse': 'TN P-Terse', 'TN P-Tot': 'TN P-Tot', 'kodeJOIN': 'kodeJOIN', 'TN Ca': 'TN Ca', });
+lyr_AnalisaTanahpHH2O_3.set('fieldAliases', {'fid': 'fid', 'Id': 'Id', 'Persil': 'Persil', 'Divisi': 'Divisi', 'Wilayah': 'Wilayah', 'kode_join': 'kode_join', 'LUAS': 'LUAS', 'Ferotrap': 'Ferotrap', 'poi': 'poi', 'DN N': 'DN N', 'DN P': 'DN P', 'DN K': 'DN K', 'DN Mg': 'DN Mg', 'DN B': 'DN B', 'DN Cu': 'DN Cu', 'DN Zn': 'DN Zn', 'DN Fe': 'DN Fe', 'TN N': 'TN N', 'TN OrgC': 'TN OrgC', 'TN C/N': 'TN C/N', 'TN CEC': 'TN CEC', 'TN Mg': 'TN Mg', 'TN K': 'TN K', 'TN K-Tot': 'TN K-Tot', 'TN pH H2O': 'TN pH H2O', 'TN P-Terse': 'TN P-Terse', 'TN P-Tot': 'TN P-Tot', 'kodeJOIN': 'kodeJOIN', 'TN Ca': 'TN Ca', });
+lyr_AnalisaTanahKTot_4.set('fieldAliases', {'fid': 'fid', 'Id': 'Id', 'Persil': 'Persil', 'Divisi': 'Divisi', 'Wilayah': 'Wilayah', 'kode_join': 'kode_join', 'LUAS': 'LUAS', 'Ferotrap': 'Ferotrap', 'poi': 'poi', 'DN N': 'DN N', 'DN P': 'DN P', 'DN K': 'DN K', 'DN Mg': 'DN Mg', 'DN B': 'DN B', 'DN Cu': 'DN Cu', 'DN Zn': 'DN Zn', 'DN Fe': 'DN Fe', 'TN N': 'TN N', 'TN OrgC': 'TN OrgC', 'TN C/N': 'TN C/N', 'TN CEC': 'TN CEC', 'TN Mg': 'TN Mg', 'TN K': 'TN K', 'TN K-Tot': 'TN K-Tot', 'TN pH H2O': 'TN pH H2O', 'TN P-Terse': 'TN P-Terse', 'TN P-Tot': 'TN P-Tot', 'kodeJOIN': 'kodeJOIN', 'TN Ca': 'TN Ca', });
+lyr_AnalisaTanahK_5.set('fieldAliases', {'fid': 'fid', 'Id': 'Id', 'Persil': 'Persil', 'Divisi': 'Divisi', 'Wilayah': 'Wilayah', 'kode_join': 'kode_join', 'LUAS': 'LUAS', 'Ferotrap': 'Ferotrap', 'poi': 'poi', 'DN N': 'DN N', 'DN P': 'DN P', 'DN K': 'DN K', 'DN Mg': 'DN Mg', 'DN B': 'DN B', 'DN Cu': 'DN Cu', 'DN Zn': 'DN Zn', 'DN Fe': 'DN Fe', 'TN N': 'TN N', 'TN OrgC': 'TN OrgC', 'TN C/N': 'TN C/N', 'TN CEC': 'TN CEC', 'TN Mg': 'TN Mg', 'TN K': 'TN K', 'TN K-Tot': 'TN K-Tot', 'TN pH H2O': 'TN pH H2O', 'TN P-Terse': 'TN P-Terse', 'TN P-Tot': 'TN P-Tot', 'kodeJOIN': 'kodeJOIN', 'TN Ca': 'TN Ca', });
+lyr_AnalisaTanahMg_6.set('fieldAliases', {'fid': 'fid', 'Id': 'Id', 'Persil': 'Persil', 'Divisi': 'Divisi', 'Wilayah': 'Wilayah', 'kode_join': 'kode_join', 'LUAS': 'LUAS', 'Ferotrap': 'Ferotrap', 'poi': 'poi', 'DN N': 'DN N', 'DN P': 'DN P', 'DN K': 'DN K', 'DN Mg': 'DN Mg', 'DN B': 'DN B', 'DN Cu': 'DN Cu', 'DN Zn': 'DN Zn', 'DN Fe': 'DN Fe', 'TN N': 'TN N', 'TN OrgC': 'TN OrgC', 'TN C/N': 'TN C/N', 'TN CEC': 'TN CEC', 'TN Mg': 'TN Mg', 'TN K': 'TN K', 'TN K-Tot': 'TN K-Tot', 'TN pH H2O': 'TN pH H2O', 'TN P-Terse': 'TN P-Terse', 'TN P-Tot': 'TN P-Tot', 'kodeJOIN': 'kodeJOIN', 'TN Ca': 'TN Ca', });
+lyr_AnalisaTanahCa_7.set('fieldAliases', {'fid': 'fid', 'Id': 'Id', 'Persil': 'Persil', 'Divisi': 'Divisi', 'Wilayah': 'Wilayah', 'kode_join': 'kode_join', 'LUAS': 'LUAS', 'Ferotrap': 'Ferotrap', 'poi': 'poi', 'DN N': 'DN N', 'DN P': 'DN P', 'DN K': 'DN K', 'DN Mg': 'DN Mg', 'DN B': 'DN B', 'DN Cu': 'DN Cu', 'DN Zn': 'DN Zn', 'DN Fe': 'DN Fe', 'TN N': 'TN N', 'TN OrgC': 'TN OrgC', 'TN C/N': 'TN C/N', 'TN CEC': 'TN CEC', 'TN Mg': 'TN Mg', 'TN K': 'TN K', 'TN K-Tot': 'TN K-Tot', 'TN pH H2O': 'TN pH H2O', 'TN P-Terse': 'TN P-Terse', 'TN P-Tot': 'TN P-Tot', 'kodeJOIN': 'kodeJOIN', 'TN Ca': 'TN Ca', });
+lyr_AnalisaTanahCEC_8.set('fieldAliases', {'fid': 'fid', 'Id': 'Id', 'Persil': 'Persil', 'Divisi': 'Divisi', 'Wilayah': 'Wilayah', 'kode_join': 'kode_join', 'LUAS': 'LUAS', 'Ferotrap': 'Ferotrap', 'poi': 'poi', 'DN N': 'DN N', 'DN P': 'DN P', 'DN K': 'DN K', 'DN Mg': 'DN Mg', 'DN B': 'DN B', 'DN Cu': 'DN Cu', 'DN Zn': 'DN Zn', 'DN Fe': 'DN Fe', 'TN N': 'TN N', 'TN OrgC': 'TN OrgC', 'TN C/N': 'TN C/N', 'TN CEC': 'TN CEC', 'TN Mg': 'TN Mg', 'TN K': 'TN K', 'TN K-Tot': 'TN K-Tot', 'TN pH H2O': 'TN pH H2O', 'TN P-Terse': 'TN P-Terse', 'TN P-Tot': 'TN P-Tot', 'kodeJOIN': 'kodeJOIN', 'TN Ca': 'TN Ca', });
+lyr_AnalisaTanahCN_9.set('fieldAliases', {'fid': 'fid', 'Id': 'Id', 'Persil': 'Persil', 'Divisi': 'Divisi', 'Wilayah': 'Wilayah', 'kode_join': 'kode_join', 'LUAS': 'LUAS', 'Ferotrap': 'Ferotrap', 'poi': 'poi', 'DN N': 'DN N', 'DN P': 'DN P', 'DN K': 'DN K', 'DN Mg': 'DN Mg', 'DN B': 'DN B', 'DN Cu': 'DN Cu', 'DN Zn': 'DN Zn', 'DN Fe': 'DN Fe', 'TN N': 'TN N', 'TN OrgC': 'TN OrgC', 'TN C/N': 'TN C/N', 'TN CEC': 'TN CEC', 'TN Mg': 'TN Mg', 'TN K': 'TN K', 'TN K-Tot': 'TN K-Tot', 'TN pH H2O': 'TN pH H2O', 'TN P-Terse': 'TN P-Terse', 'TN P-Tot': 'TN P-Tot', 'kodeJOIN': 'kodeJOIN', 'TN Ca': 'TN Ca', });
+lyr_AnalisaTanahOrgC_10.set('fieldAliases', {'fid': 'fid', 'Id': 'Id', 'Persil': 'Persil', 'Divisi': 'Divisi', 'Wilayah': 'Wilayah', 'kode_join': 'kode_join', 'LUAS': 'LUAS', 'Ferotrap': 'Ferotrap', 'poi': 'poi', 'DN N': 'DN N', 'DN P': 'DN P', 'DN K': 'DN K', 'DN Mg': 'DN Mg', 'DN B': 'DN B', 'DN Cu': 'DN Cu', 'DN Zn': 'DN Zn', 'DN Fe': 'DN Fe', 'TN N': 'TN N', 'TN OrgC': 'TN OrgC', 'TN C/N': 'TN C/N', 'TN CEC': 'TN CEC', 'TN Mg': 'TN Mg', 'TN K': 'TN K', 'TN K-Tot': 'TN K-Tot', 'TN pH H2O': 'TN pH H2O', 'TN P-Terse': 'TN P-Terse', 'TN P-Tot': 'TN P-Tot', 'kodeJOIN': 'kodeJOIN', 'TN Ca': 'TN Ca', });
+lyr_AnalisaTanahN_11.set('fieldAliases', {'fid': 'fid', 'Id': 'Id', 'Persil': 'Persil', 'Divisi': 'Divisi', 'Wilayah': 'Wilayah', 'kode_join': 'kode_join', 'LUAS': 'LUAS', 'Ferotrap': 'Ferotrap', 'poi': 'poi', 'DN N': 'DN N', 'DN P': 'DN P', 'DN K': 'DN K', 'DN Mg': 'DN Mg', 'DN B': 'DN B', 'DN Cu': 'DN Cu', 'DN Zn': 'DN Zn', 'DN Fe': 'DN Fe', 'TN N': 'TN N', 'TN OrgC': 'TN OrgC', 'TN C/N': 'TN C/N', 'TN CEC': 'TN CEC', 'TN Mg': 'TN Mg', 'TN K': 'TN K', 'TN K-Tot': 'TN K-Tot', 'TN pH H2O': 'TN pH H2O', 'TN P-Terse': 'TN P-Terse', 'TN P-Tot': 'TN P-Tot', 'kodeJOIN': 'kodeJOIN', 'TN Ca': 'TN Ca', });
+lyr_AnalisaDaunFe_12.set('fieldAliases', {'fid': 'fid', 'Id': 'Id', 'Persil': 'Persil', 'Divisi': 'Divisi', 'Wilayah': 'Wilayah', 'kode_join': 'kode_join', 'LUAS': 'LUAS', 'Ferotrap': 'Ferotrap', 'poi': 'poi', 'DN N': 'DN N', 'DN P': 'DN P', 'DN K': 'DN K', 'DN Mg': 'DN Mg', 'DN B': 'DN B', 'DN Cu': 'DN Cu', 'DN Zn': 'DN Zn', 'DN Fe': 'DN Fe', 'TN N': 'TN N', 'TN OrgC': 'TN OrgC', 'TN C/N': 'TN C/N', 'TN CEC': 'TN CEC', 'TN Mg': 'TN Mg', 'TN K': 'TN K', 'TN K-Tot': 'TN K-Tot', 'TN pH H2O': 'TN pH H2O', 'TN P-Terse': 'TN P-Terse', 'TN P-Tot': 'TN P-Tot', 'kodeJOIN': 'kodeJOIN', 'TN Ca': 'TN Ca', });
+lyr_AnalisaDaunZn_13.set('fieldAliases', {'fid': 'fid', 'Id': 'Id', 'Persil': 'Persil', 'Divisi': 'Divisi', 'Wilayah': 'Wilayah', 'kode_join': 'kode_join', 'LUAS': 'LUAS', 'Ferotrap': 'Ferotrap', 'poi': 'poi', 'DN N': 'DN N', 'DN P': 'DN P', 'DN K': 'DN K', 'DN Mg': 'DN Mg', 'DN B': 'DN B', 'DN Cu': 'DN Cu', 'DN Zn': 'DN Zn', 'DN Fe': 'DN Fe', 'TN N': 'TN N', 'TN OrgC': 'TN OrgC', 'TN C/N': 'TN C/N', 'TN CEC': 'TN CEC', 'TN Mg': 'TN Mg', 'TN K': 'TN K', 'TN K-Tot': 'TN K-Tot', 'TN pH H2O': 'TN pH H2O', 'TN P-Terse': 'TN P-Terse', 'TN P-Tot': 'TN P-Tot', 'kodeJOIN': 'kodeJOIN', 'TN Ca': 'TN Ca', });
+lyr_AnalisaDaunCu_14.set('fieldAliases', {'fid': 'fid', 'Id': 'Id', 'Persil': 'Persil', 'Divisi': 'Divisi', 'Wilayah': 'Wilayah', 'kode_join': 'kode_join', 'LUAS': 'LUAS', 'Ferotrap': 'Ferotrap', 'poi': 'poi', 'DN N': 'DN N', 'DN P': 'DN P', 'DN K': 'DN K', 'DN Mg': 'DN Mg', 'DN B': 'DN B', 'DN Cu': 'DN Cu', 'DN Zn': 'DN Zn', 'DN Fe': 'DN Fe', 'TN N': 'TN N', 'TN OrgC': 'TN OrgC', 'TN C/N': 'TN C/N', 'TN CEC': 'TN CEC', 'TN Mg': 'TN Mg', 'TN K': 'TN K', 'TN K-Tot': 'TN K-Tot', 'TN pH H2O': 'TN pH H2O', 'TN P-Terse': 'TN P-Terse', 'TN P-Tot': 'TN P-Tot', 'kodeJOIN': 'kodeJOIN', 'TN Ca': 'TN Ca', });
+lyr_AnalisaDaunB_15.set('fieldAliases', {'fid': 'fid', 'Id': 'Id', 'Persil': 'Persil', 'Divisi': 'Divisi', 'Wilayah': 'Wilayah', 'kode_join': 'kode_join', 'LUAS': 'LUAS', 'Ferotrap': 'Ferotrap', 'poi': 'poi', 'DN N': 'DN N', 'DN P': 'DN P', 'DN K': 'DN K', 'DN Mg': 'DN Mg', 'DN B': 'DN B', 'DN Cu': 'DN Cu', 'DN Zn': 'DN Zn', 'DN Fe': 'DN Fe', 'TN N': 'TN N', 'TN OrgC': 'TN OrgC', 'TN C/N': 'TN C/N', 'TN CEC': 'TN CEC', 'TN Mg': 'TN Mg', 'TN K': 'TN K', 'TN K-Tot': 'TN K-Tot', 'TN pH H2O': 'TN pH H2O', 'TN P-Terse': 'TN P-Terse', 'TN P-Tot': 'TN P-Tot', 'kodeJOIN': 'kodeJOIN', 'TN Ca': 'TN Ca', });
+lyr_AnalisaDaunMg_16.set('fieldAliases', {'fid': 'fid', 'Id': 'Id', 'Persil': 'Persil', 'Divisi': 'Divisi', 'Wilayah': 'Wilayah', 'kode_join': 'kode_join', 'LUAS': 'LUAS', 'Ferotrap': 'Ferotrap', 'poi': 'poi', 'DN N': 'DN N', 'DN P': 'DN P', 'DN K': 'DN K', 'DN Mg': 'DN Mg', 'DN B': 'DN B', 'DN Cu': 'DN Cu', 'DN Zn': 'DN Zn', 'DN Fe': 'DN Fe', 'TN N': 'TN N', 'TN OrgC': 'TN OrgC', 'TN C/N': 'TN C/N', 'TN CEC': 'TN CEC', 'TN Mg': 'TN Mg', 'TN K': 'TN K', 'TN K-Tot': 'TN K-Tot', 'TN pH H2O': 'TN pH H2O', 'TN P-Terse': 'TN P-Terse', 'TN P-Tot': 'TN P-Tot', 'kodeJOIN': 'kodeJOIN', 'TN Ca': 'TN Ca', });
+lyr_AnalisaDaunK_17.set('fieldAliases', {'fid': 'fid', 'Id': 'Id', 'Persil': 'Persil', 'Divisi': 'Divisi', 'Wilayah': 'Wilayah', 'kode_join': 'kode_join', 'LUAS': 'LUAS', 'Ferotrap': 'Ferotrap', 'poi': 'poi', 'DN N': 'DN N', 'DN P': 'DN P', 'DN K': 'DN K', 'DN Mg': 'DN Mg', 'DN B': 'DN B', 'DN Cu': 'DN Cu', 'DN Zn': 'DN Zn', 'DN Fe': 'DN Fe', 'TN N': 'TN N', 'TN OrgC': 'TN OrgC', 'TN C/N': 'TN C/N', 'TN CEC': 'TN CEC', 'TN Mg': 'TN Mg', 'TN K': 'TN K', 'TN K-Tot': 'TN K-Tot', 'TN pH H2O': 'TN pH H2O', 'TN P-Terse': 'TN P-Terse', 'TN P-Tot': 'TN P-Tot', 'kodeJOIN': 'kodeJOIN', 'TN Ca': 'TN Ca', });
+lyr_AnalisaDaunP_18.set('fieldAliases', {'fid': 'fid', 'Id': 'Id', 'Persil': 'Persil', 'Divisi': 'Divisi', 'Wilayah': 'Wilayah', 'kode_join': 'kode_join', 'LUAS': 'LUAS', 'Ferotrap': 'Ferotrap', 'poi': 'poi', 'DN N': 'DN N', 'DN P': 'DN P', 'DN K': 'DN K', 'DN Mg': 'DN Mg', 'DN B': 'DN B', 'DN Cu': 'DN Cu', 'DN Zn': 'DN Zn', 'DN Fe': 'DN Fe', 'TN N': 'TN N', 'TN OrgC': 'TN OrgC', 'TN C/N': 'TN C/N', 'TN CEC': 'TN CEC', 'TN Mg': 'TN Mg', 'TN K': 'TN K', 'TN K-Tot': 'TN K-Tot', 'TN pH H2O': 'TN pH H2O', 'TN P-Terse': 'TN P-Terse', 'TN P-Tot': 'TN P-Tot', 'kodeJOIN': 'kodeJOIN', 'TN Ca': 'TN Ca', });
+lyr_AnalisaDaunN_19.set('fieldAliases', {'fid': 'fid', 'Id': 'Id', 'Persil': 'Persil', 'Divisi': 'Divisi', 'Wilayah': 'Wilayah', 'kode_join': 'kode_join', 'LUAS': 'LUAS', 'Ferotrap': 'Ferotrap', 'poi': 'poi', 'DN N': 'DN N', 'DN P': 'DN P', 'DN K': 'DN K', 'DN Mg': 'DN Mg', 'DN B': 'DN B', 'DN Cu': 'DN Cu', 'DN Zn': 'DN Zn', 'DN Fe': 'DN Fe', 'TN N': 'TN N', 'TN OrgC': 'TN OrgC', 'TN C/N': 'TN C/N', 'TN CEC': 'TN CEC', 'TN Mg': 'TN Mg', 'TN K': 'TN K', 'TN K-Tot': 'TN K-Tot', 'TN pH H2O': 'TN pH H2O', 'TN P-Terse': 'TN P-Terse', 'TN P-Tot': 'TN P-Tot', 'kodeJOIN': 'kodeJOIN', 'TN Ca': 'TN Ca', });
+lyr_LAPORANRUTINBatasWilayah_20.set('fieldAliases', {'fid': 'fid', 'Id': 'Id', });
+lyr_LAPORANRUTINAreaHCVRSUPPKB_21.set('fieldAliases', {'fid': 'fid', 'Tuplah': 'Tuplah', 'Sungai': 'Sungai', 'Makam': 'Makam', 'Rawa': 'Rawa', 'Keterangan': 'Keterangan', 'HCV_1': 'HCV_1', 'HCV_2': 'HCV_2', 'HCV_3': 'HCV_3', 'HCV_4': 'HCV_4', 'HCV_5': 'HCV_5', 'HCV_6': 'HCV_6', 'Indeks': 'Indeks', 'Entitas': 'Entitas', 'Luas': 'Luas', 'Wilayah': 'Wilayah', });
+lyr_AnalisaTanahPTersedia_1.set('fieldImages', {'fid': 'TextEdit', 'Id': 'TextEdit', 'Persil': 'TextEdit', 'Divisi': 'TextEdit', 'Wilayah': 'TextEdit', 'kode_join': 'TextEdit', 'LUAS': 'TextEdit', 'Ferotrap': 'TextEdit', 'poi': 'TextEdit', 'DN N': 'TextEdit', 'DN P': 'TextEdit', 'DN K': 'TextEdit', 'DN Mg': 'TextEdit', 'DN B': 'TextEdit', 'DN Cu': 'TextEdit', 'DN Zn': 'TextEdit', 'DN Fe': 'TextEdit', 'TN N': 'TextEdit', 'TN OrgC': 'TextEdit', 'TN C/N': 'TextEdit', 'TN CEC': 'TextEdit', 'TN Mg': 'TextEdit', 'TN K': 'TextEdit', 'TN K-Tot': 'TextEdit', 'TN pH H2O': 'TextEdit', 'TN P-Terse': 'TextEdit', 'TN P-Tot': 'TextEdit', 'kodeJOIN': 'TextEdit', 'TN Ca': 'TextEdit', });
+lyr_AnalisaTanahPTot_2.set('fieldImages', {'fid': 'TextEdit', 'Id': 'TextEdit', 'Persil': 'TextEdit', 'Divisi': 'TextEdit', 'Wilayah': 'TextEdit', 'kode_join': 'TextEdit', 'LUAS': 'TextEdit', 'Ferotrap': 'TextEdit', 'poi': 'TextEdit', 'DN N': 'TextEdit', 'DN P': 'TextEdit', 'DN K': 'TextEdit', 'DN Mg': 'TextEdit', 'DN B': 'TextEdit', 'DN Cu': 'TextEdit', 'DN Zn': 'TextEdit', 'DN Fe': 'TextEdit', 'TN N': 'TextEdit', 'TN OrgC': 'TextEdit', 'TN C/N': 'TextEdit', 'TN CEC': 'TextEdit', 'TN Mg': 'TextEdit', 'TN K': 'TextEdit', 'TN K-Tot': 'TextEdit', 'TN pH H2O': 'TextEdit', 'TN P-Terse': 'TextEdit', 'TN P-Tot': 'TextEdit', 'kodeJOIN': 'TextEdit', 'TN Ca': 'TextEdit', });
+lyr_AnalisaTanahpHH2O_3.set('fieldImages', {'fid': 'TextEdit', 'Id': 'TextEdit', 'Persil': 'TextEdit', 'Divisi': 'TextEdit', 'Wilayah': 'TextEdit', 'kode_join': 'TextEdit', 'LUAS': 'TextEdit', 'Ferotrap': 'TextEdit', 'poi': 'TextEdit', 'DN N': 'TextEdit', 'DN P': 'TextEdit', 'DN K': 'TextEdit', 'DN Mg': 'TextEdit', 'DN B': 'TextEdit', 'DN Cu': 'TextEdit', 'DN Zn': 'TextEdit', 'DN Fe': 'TextEdit', 'TN N': 'TextEdit', 'TN OrgC': 'TextEdit', 'TN C/N': 'TextEdit', 'TN CEC': 'TextEdit', 'TN Mg': 'TextEdit', 'TN K': 'TextEdit', 'TN K-Tot': 'TextEdit', 'TN pH H2O': 'TextEdit', 'TN P-Terse': 'TextEdit', 'TN P-Tot': 'TextEdit', 'kodeJOIN': 'TextEdit', 'TN Ca': 'TextEdit', });
+lyr_AnalisaTanahKTot_4.set('fieldImages', {'fid': 'TextEdit', 'Id': 'TextEdit', 'Persil': 'TextEdit', 'Divisi': 'TextEdit', 'Wilayah': 'TextEdit', 'kode_join': 'TextEdit', 'LUAS': 'TextEdit', 'Ferotrap': 'TextEdit', 'poi': 'TextEdit', 'DN N': 'TextEdit', 'DN P': 'TextEdit', 'DN K': 'TextEdit', 'DN Mg': 'TextEdit', 'DN B': 'TextEdit', 'DN Cu': 'TextEdit', 'DN Zn': 'TextEdit', 'DN Fe': 'TextEdit', 'TN N': 'TextEdit', 'TN OrgC': 'TextEdit', 'TN C/N': 'TextEdit', 'TN CEC': 'TextEdit', 'TN Mg': 'TextEdit', 'TN K': 'TextEdit', 'TN K-Tot': 'TextEdit', 'TN pH H2O': 'TextEdit', 'TN P-Terse': 'TextEdit', 'TN P-Tot': 'TextEdit', 'kodeJOIN': 'TextEdit', 'TN Ca': 'TextEdit', });
+lyr_AnalisaTanahK_5.set('fieldImages', {'fid': 'TextEdit', 'Id': 'TextEdit', 'Persil': 'TextEdit', 'Divisi': 'TextEdit', 'Wilayah': 'TextEdit', 'kode_join': 'TextEdit', 'LUAS': 'TextEdit', 'Ferotrap': 'TextEdit', 'poi': 'TextEdit', 'DN N': 'TextEdit', 'DN P': 'TextEdit', 'DN K': 'TextEdit', 'DN Mg': 'TextEdit', 'DN B': 'TextEdit', 'DN Cu': 'TextEdit', 'DN Zn': 'TextEdit', 'DN Fe': 'TextEdit', 'TN N': 'TextEdit', 'TN OrgC': 'TextEdit', 'TN C/N': 'TextEdit', 'TN CEC': 'TextEdit', 'TN Mg': 'TextEdit', 'TN K': 'TextEdit', 'TN K-Tot': 'TextEdit', 'TN pH H2O': 'TextEdit', 'TN P-Terse': 'TextEdit', 'TN P-Tot': 'TextEdit', 'kodeJOIN': 'TextEdit', 'TN Ca': 'TextEdit', });
+lyr_AnalisaTanahMg_6.set('fieldImages', {'fid': 'TextEdit', 'Id': 'TextEdit', 'Persil': 'TextEdit', 'Divisi': 'TextEdit', 'Wilayah': 'TextEdit', 'kode_join': 'TextEdit', 'LUAS': 'TextEdit', 'Ferotrap': 'TextEdit', 'poi': 'TextEdit', 'DN N': 'TextEdit', 'DN P': 'TextEdit', 'DN K': 'TextEdit', 'DN Mg': 'TextEdit', 'DN B': 'TextEdit', 'DN Cu': 'TextEdit', 'DN Zn': 'TextEdit', 'DN Fe': 'TextEdit', 'TN N': 'TextEdit', 'TN OrgC': 'TextEdit', 'TN C/N': 'TextEdit', 'TN CEC': 'TextEdit', 'TN Mg': 'TextEdit', 'TN K': 'TextEdit', 'TN K-Tot': 'TextEdit', 'TN pH H2O': 'TextEdit', 'TN P-Terse': 'TextEdit', 'TN P-Tot': 'TextEdit', 'kodeJOIN': 'TextEdit', 'TN Ca': 'TextEdit', });
+lyr_AnalisaTanahCa_7.set('fieldImages', {'fid': 'TextEdit', 'Id': 'TextEdit', 'Persil': 'TextEdit', 'Divisi': 'TextEdit', 'Wilayah': 'TextEdit', 'kode_join': 'TextEdit', 'LUAS': 'TextEdit', 'Ferotrap': 'TextEdit', 'poi': 'TextEdit', 'DN N': 'TextEdit', 'DN P': 'TextEdit', 'DN K': 'TextEdit', 'DN Mg': 'TextEdit', 'DN B': 'TextEdit', 'DN Cu': 'TextEdit', 'DN Zn': 'TextEdit', 'DN Fe': 'TextEdit', 'TN N': 'TextEdit', 'TN OrgC': 'TextEdit', 'TN C/N': 'TextEdit', 'TN CEC': 'TextEdit', 'TN Mg': 'TextEdit', 'TN K': 'TextEdit', 'TN K-Tot': 'TextEdit', 'TN pH H2O': 'TextEdit', 'TN P-Terse': 'TextEdit', 'TN P-Tot': 'TextEdit', 'kodeJOIN': 'TextEdit', 'TN Ca': 'TextEdit', });
+lyr_AnalisaTanahCEC_8.set('fieldImages', {'fid': 'TextEdit', 'Id': 'TextEdit', 'Persil': 'TextEdit', 'Divisi': 'TextEdit', 'Wilayah': 'TextEdit', 'kode_join': 'TextEdit', 'LUAS': 'TextEdit', 'Ferotrap': 'TextEdit', 'poi': 'TextEdit', 'DN N': 'TextEdit', 'DN P': 'TextEdit', 'DN K': 'TextEdit', 'DN Mg': 'TextEdit', 'DN B': 'TextEdit', 'DN Cu': 'TextEdit', 'DN Zn': 'TextEdit', 'DN Fe': 'TextEdit', 'TN N': 'TextEdit', 'TN OrgC': 'TextEdit', 'TN C/N': 'TextEdit', 'TN CEC': 'TextEdit', 'TN Mg': 'TextEdit', 'TN K': 'TextEdit', 'TN K-Tot': 'TextEdit', 'TN pH H2O': 'TextEdit', 'TN P-Terse': 'TextEdit', 'TN P-Tot': 'TextEdit', 'kodeJOIN': 'TextEdit', 'TN Ca': 'TextEdit', });
+lyr_AnalisaTanahCN_9.set('fieldImages', {'fid': 'TextEdit', 'Id': 'TextEdit', 'Persil': 'TextEdit', 'Divisi': 'TextEdit', 'Wilayah': 'TextEdit', 'kode_join': 'TextEdit', 'LUAS': 'TextEdit', 'Ferotrap': 'TextEdit', 'poi': 'TextEdit', 'DN N': 'TextEdit', 'DN P': 'TextEdit', 'DN K': 'TextEdit', 'DN Mg': 'TextEdit', 'DN B': 'TextEdit', 'DN Cu': 'TextEdit', 'DN Zn': 'TextEdit', 'DN Fe': 'TextEdit', 'TN N': 'TextEdit', 'TN OrgC': 'TextEdit', 'TN C/N': 'TextEdit', 'TN CEC': 'TextEdit', 'TN Mg': 'TextEdit', 'TN K': 'TextEdit', 'TN K-Tot': 'TextEdit', 'TN pH H2O': 'TextEdit', 'TN P-Terse': 'TextEdit', 'TN P-Tot': 'TextEdit', 'kodeJOIN': 'TextEdit', 'TN Ca': 'TextEdit', });
+lyr_AnalisaTanahOrgC_10.set('fieldImages', {'fid': 'TextEdit', 'Id': 'TextEdit', 'Persil': 'TextEdit', 'Divisi': 'TextEdit', 'Wilayah': 'TextEdit', 'kode_join': 'TextEdit', 'LUAS': 'TextEdit', 'Ferotrap': 'TextEdit', 'poi': 'TextEdit', 'DN N': 'TextEdit', 'DN P': 'TextEdit', 'DN K': 'TextEdit', 'DN Mg': 'TextEdit', 'DN B': 'TextEdit', 'DN Cu': 'TextEdit', 'DN Zn': 'TextEdit', 'DN Fe': 'TextEdit', 'TN N': 'TextEdit', 'TN OrgC': 'TextEdit', 'TN C/N': 'TextEdit', 'TN CEC': 'TextEdit', 'TN Mg': 'TextEdit', 'TN K': 'TextEdit', 'TN K-Tot': 'TextEdit', 'TN pH H2O': 'TextEdit', 'TN P-Terse': 'TextEdit', 'TN P-Tot': 'TextEdit', 'kodeJOIN': 'TextEdit', 'TN Ca': 'TextEdit', });
+lyr_AnalisaTanahN_11.set('fieldImages', {'fid': 'TextEdit', 'Id': 'TextEdit', 'Persil': 'TextEdit', 'Divisi': 'TextEdit', 'Wilayah': 'TextEdit', 'kode_join': 'TextEdit', 'LUAS': 'TextEdit', 'Ferotrap': 'TextEdit', 'poi': 'TextEdit', 'DN N': 'TextEdit', 'DN P': 'TextEdit', 'DN K': 'TextEdit', 'DN Mg': 'TextEdit', 'DN B': 'TextEdit', 'DN Cu': 'TextEdit', 'DN Zn': 'TextEdit', 'DN Fe': 'TextEdit', 'TN N': 'TextEdit', 'TN OrgC': 'TextEdit', 'TN C/N': 'TextEdit', 'TN CEC': 'TextEdit', 'TN Mg': 'TextEdit', 'TN K': 'TextEdit', 'TN K-Tot': 'TextEdit', 'TN pH H2O': 'TextEdit', 'TN P-Terse': 'TextEdit', 'TN P-Tot': 'TextEdit', 'kodeJOIN': 'TextEdit', 'TN Ca': 'TextEdit', });
+lyr_AnalisaDaunFe_12.set('fieldImages', {'fid': 'TextEdit', 'Id': 'TextEdit', 'Persil': 'TextEdit', 'Divisi': 'TextEdit', 'Wilayah': 'TextEdit', 'kode_join': 'TextEdit', 'LUAS': 'TextEdit', 'Ferotrap': 'TextEdit', 'poi': 'TextEdit', 'DN N': 'TextEdit', 'DN P': 'TextEdit', 'DN K': 'TextEdit', 'DN Mg': 'TextEdit', 'DN B': 'TextEdit', 'DN Cu': 'TextEdit', 'DN Zn': 'TextEdit', 'DN Fe': 'TextEdit', 'TN N': 'TextEdit', 'TN OrgC': 'TextEdit', 'TN C/N': 'TextEdit', 'TN CEC': 'TextEdit', 'TN Mg': 'TextEdit', 'TN K': 'TextEdit', 'TN K-Tot': 'TextEdit', 'TN pH H2O': 'TextEdit', 'TN P-Terse': 'TextEdit', 'TN P-Tot': 'TextEdit', 'kodeJOIN': 'TextEdit', 'TN Ca': 'TextEdit', });
+lyr_AnalisaDaunZn_13.set('fieldImages', {'fid': 'TextEdit', 'Id': 'TextEdit', 'Persil': 'TextEdit', 'Divisi': 'TextEdit', 'Wilayah': 'TextEdit', 'kode_join': 'TextEdit', 'LUAS': 'TextEdit', 'Ferotrap': 'TextEdit', 'poi': 'TextEdit', 'DN N': 'TextEdit', 'DN P': 'TextEdit', 'DN K': 'TextEdit', 'DN Mg': 'TextEdit', 'DN B': 'TextEdit', 'DN Cu': 'TextEdit', 'DN Zn': 'TextEdit', 'DN Fe': 'TextEdit', 'TN N': 'TextEdit', 'TN OrgC': 'TextEdit', 'TN C/N': 'TextEdit', 'TN CEC': 'TextEdit', 'TN Mg': 'TextEdit', 'TN K': 'TextEdit', 'TN K-Tot': 'TextEdit', 'TN pH H2O': 'TextEdit', 'TN P-Terse': 'TextEdit', 'TN P-Tot': 'TextEdit', 'kodeJOIN': 'TextEdit', 'TN Ca': 'TextEdit', });
+lyr_AnalisaDaunCu_14.set('fieldImages', {'fid': 'TextEdit', 'Id': 'TextEdit', 'Persil': 'TextEdit', 'Divisi': 'TextEdit', 'Wilayah': 'TextEdit', 'kode_join': 'TextEdit', 'LUAS': 'TextEdit', 'Ferotrap': 'TextEdit', 'poi': 'TextEdit', 'DN N': 'TextEdit', 'DN P': 'TextEdit', 'DN K': 'TextEdit', 'DN Mg': 'TextEdit', 'DN B': 'TextEdit', 'DN Cu': 'TextEdit', 'DN Zn': 'TextEdit', 'DN Fe': 'TextEdit', 'TN N': 'TextEdit', 'TN OrgC': 'TextEdit', 'TN C/N': 'TextEdit', 'TN CEC': 'TextEdit', 'TN Mg': 'TextEdit', 'TN K': 'TextEdit', 'TN K-Tot': 'TextEdit', 'TN pH H2O': 'TextEdit', 'TN P-Terse': 'TextEdit', 'TN P-Tot': 'TextEdit', 'kodeJOIN': 'TextEdit', 'TN Ca': 'TextEdit', });
+lyr_AnalisaDaunB_15.set('fieldImages', {'fid': 'TextEdit', 'Id': 'TextEdit', 'Persil': 'TextEdit', 'Divisi': 'TextEdit', 'Wilayah': 'TextEdit', 'kode_join': 'TextEdit', 'LUAS': 'TextEdit', 'Ferotrap': 'TextEdit', 'poi': 'TextEdit', 'DN N': 'TextEdit', 'DN P': 'TextEdit', 'DN K': 'TextEdit', 'DN Mg': 'TextEdit', 'DN B': 'TextEdit', 'DN Cu': 'TextEdit', 'DN Zn': 'TextEdit', 'DN Fe': 'TextEdit', 'TN N': 'TextEdit', 'TN OrgC': 'TextEdit', 'TN C/N': 'TextEdit', 'TN CEC': 'TextEdit', 'TN Mg': 'TextEdit', 'TN K': 'TextEdit', 'TN K-Tot': 'TextEdit', 'TN pH H2O': 'TextEdit', 'TN P-Terse': 'TextEdit', 'TN P-Tot': 'TextEdit', 'kodeJOIN': 'TextEdit', 'TN Ca': 'TextEdit', });
+lyr_AnalisaDaunMg_16.set('fieldImages', {'fid': 'TextEdit', 'Id': 'TextEdit', 'Persil': 'TextEdit', 'Divisi': 'TextEdit', 'Wilayah': 'TextEdit', 'kode_join': 'TextEdit', 'LUAS': 'TextEdit', 'Ferotrap': 'TextEdit', 'poi': 'TextEdit', 'DN N': 'TextEdit', 'DN P': 'TextEdit', 'DN K': 'TextEdit', 'DN Mg': 'TextEdit', 'DN B': 'TextEdit', 'DN Cu': 'TextEdit', 'DN Zn': 'TextEdit', 'DN Fe': 'TextEdit', 'TN N': 'TextEdit', 'TN OrgC': 'TextEdit', 'TN C/N': 'TextEdit', 'TN CEC': 'TextEdit', 'TN Mg': 'TextEdit', 'TN K': 'TextEdit', 'TN K-Tot': 'TextEdit', 'TN pH H2O': 'TextEdit', 'TN P-Terse': 'TextEdit', 'TN P-Tot': 'TextEdit', 'kodeJOIN': 'TextEdit', 'TN Ca': 'TextEdit', });
+lyr_AnalisaDaunK_17.set('fieldImages', {'fid': 'TextEdit', 'Id': 'TextEdit', 'Persil': 'TextEdit', 'Divisi': 'TextEdit', 'Wilayah': 'TextEdit', 'kode_join': 'TextEdit', 'LUAS': 'TextEdit', 'Ferotrap': 'TextEdit', 'poi': 'TextEdit', 'DN N': 'TextEdit', 'DN P': 'TextEdit', 'DN K': 'TextEdit', 'DN Mg': 'TextEdit', 'DN B': 'TextEdit', 'DN Cu': 'TextEdit', 'DN Zn': 'TextEdit', 'DN Fe': 'TextEdit', 'TN N': 'TextEdit', 'TN OrgC': 'TextEdit', 'TN C/N': 'TextEdit', 'TN CEC': 'TextEdit', 'TN Mg': 'TextEdit', 'TN K': 'TextEdit', 'TN K-Tot': 'TextEdit', 'TN pH H2O': 'TextEdit', 'TN P-Terse': 'TextEdit', 'TN P-Tot': 'TextEdit', 'kodeJOIN': 'TextEdit', 'TN Ca': 'TextEdit', });
+lyr_AnalisaDaunP_18.set('fieldImages', {'fid': 'TextEdit', 'Id': 'TextEdit', 'Persil': 'TextEdit', 'Divisi': 'TextEdit', 'Wilayah': 'TextEdit', 'kode_join': 'TextEdit', 'LUAS': 'TextEdit', 'Ferotrap': 'TextEdit', 'poi': 'TextEdit', 'DN N': 'TextEdit', 'DN P': 'TextEdit', 'DN K': 'TextEdit', 'DN Mg': 'TextEdit', 'DN B': 'TextEdit', 'DN Cu': 'TextEdit', 'DN Zn': 'TextEdit', 'DN Fe': 'TextEdit', 'TN N': 'TextEdit', 'TN OrgC': 'TextEdit', 'TN C/N': 'TextEdit', 'TN CEC': 'TextEdit', 'TN Mg': 'TextEdit', 'TN K': 'TextEdit', 'TN K-Tot': 'TextEdit', 'TN pH H2O': 'TextEdit', 'TN P-Terse': 'TextEdit', 'TN P-Tot': 'TextEdit', 'kodeJOIN': 'TextEdit', 'TN Ca': 'TextEdit', });
+lyr_AnalisaDaunN_19.set('fieldImages', {'fid': 'TextEdit', 'Id': 'TextEdit', 'Persil': 'TextEdit', 'Divisi': 'TextEdit', 'Wilayah': 'TextEdit', 'kode_join': 'TextEdit', 'LUAS': 'TextEdit', 'Ferotrap': 'TextEdit', 'poi': 'TextEdit', 'DN N': 'TextEdit', 'DN P': 'TextEdit', 'DN K': 'TextEdit', 'DN Mg': 'TextEdit', 'DN B': 'TextEdit', 'DN Cu': 'TextEdit', 'DN Zn': 'TextEdit', 'DN Fe': 'TextEdit', 'TN N': 'TextEdit', 'TN OrgC': 'TextEdit', 'TN C/N': 'TextEdit', 'TN CEC': 'TextEdit', 'TN Mg': 'TextEdit', 'TN K': 'TextEdit', 'TN K-Tot': 'TextEdit', 'TN pH H2O': 'TextEdit', 'TN P-Terse': 'TextEdit', 'TN P-Tot': 'TextEdit', 'kodeJOIN': 'TextEdit', 'TN Ca': 'TextEdit', });
+lyr_LAPORANRUTINBatasWilayah_20.set('fieldImages', {'fid': '', 'Id': 'Range', });
+lyr_LAPORANRUTINAreaHCVRSUPPKB_21.set('fieldImages', {'fid': '', 'Tuplah': 'TextEdit', 'Sungai': 'TextEdit', 'Makam': 'TextEdit', 'Rawa': 'TextEdit', 'Keterangan': 'TextEdit', 'HCV_1': 'TextEdit', 'HCV_2': 'TextEdit', 'HCV_3': 'TextEdit', 'HCV_4': 'TextEdit', 'HCV_5': 'TextEdit', 'HCV_6': 'TextEdit', 'Indeks': 'TextEdit', 'Entitas': 'TextEdit', 'Luas': 'TextEdit', 'Wilayah': 'TextEdit', });
+lyr_AnalisaTanahPTersedia_1.set('fieldLabels', {'fid': 'no label', 'Id': 'no label', 'Persil': 'no label', 'Divisi': 'no label', 'Wilayah': 'no label', 'kode_join': 'no label', 'LUAS': 'no label', 'Ferotrap': 'no label', 'poi': 'no label', 'DN N': 'no label', 'DN P': 'no label', 'DN K': 'no label', 'DN Mg': 'no label', 'DN B': 'no label', 'DN Cu': 'no label', 'DN Zn': 'no label', 'DN Fe': 'no label', 'TN N': 'no label', 'TN OrgC': 'no label', 'TN C/N': 'no label', 'TN CEC': 'no label', 'TN Mg': 'no label', 'TN K': 'no label', 'TN K-Tot': 'no label', 'TN pH H2O': 'no label', 'TN P-Terse': 'no label', 'TN P-Tot': 'no label', 'kodeJOIN': 'no label', 'TN Ca': 'no label', });
+lyr_AnalisaTanahPTot_2.set('fieldLabels', {'fid': 'no label', 'Id': 'no label', 'Persil': 'no label', 'Divisi': 'no label', 'Wilayah': 'no label', 'kode_join': 'no label', 'LUAS': 'no label', 'Ferotrap': 'no label', 'poi': 'no label', 'DN N': 'no label', 'DN P': 'no label', 'DN K': 'no label', 'DN Mg': 'no label', 'DN B': 'no label', 'DN Cu': 'no label', 'DN Zn': 'no label', 'DN Fe': 'no label', 'TN N': 'no label', 'TN OrgC': 'no label', 'TN C/N': 'no label', 'TN CEC': 'no label', 'TN Mg': 'no label', 'TN K': 'no label', 'TN K-Tot': 'no label', 'TN pH H2O': 'no label', 'TN P-Terse': 'no label', 'TN P-Tot': 'no label', 'kodeJOIN': 'no label', 'TN Ca': 'no label', });
+lyr_AnalisaTanahpHH2O_3.set('fieldLabels', {'fid': 'no label', 'Id': 'no label', 'Persil': 'no label', 'Divisi': 'no label', 'Wilayah': 'no label', 'kode_join': 'no label', 'LUAS': 'no label', 'Ferotrap': 'no label', 'poi': 'no label', 'DN N': 'no label', 'DN P': 'no label', 'DN K': 'no label', 'DN Mg': 'no label', 'DN B': 'no label', 'DN Cu': 'no label', 'DN Zn': 'no label', 'DN Fe': 'no label', 'TN N': 'no label', 'TN OrgC': 'no label', 'TN C/N': 'no label', 'TN CEC': 'no label', 'TN Mg': 'no label', 'TN K': 'no label', 'TN K-Tot': 'no label', 'TN pH H2O': 'no label', 'TN P-Terse': 'no label', 'TN P-Tot': 'no label', 'kodeJOIN': 'no label', 'TN Ca': 'no label', });
+lyr_AnalisaTanahKTot_4.set('fieldLabels', {'fid': 'no label', 'Id': 'no label', 'Persil': 'no label', 'Divisi': 'no label', 'Wilayah': 'no label', 'kode_join': 'no label', 'LUAS': 'no label', 'Ferotrap': 'no label', 'poi': 'no label', 'DN N': 'no label', 'DN P': 'no label', 'DN K': 'no label', 'DN Mg': 'no label', 'DN B': 'no label', 'DN Cu': 'no label', 'DN Zn': 'no label', 'DN Fe': 'no label', 'TN N': 'no label', 'TN OrgC': 'no label', 'TN C/N': 'no label', 'TN CEC': 'no label', 'TN Mg': 'no label', 'TN K': 'no label', 'TN K-Tot': 'no label', 'TN pH H2O': 'no label', 'TN P-Terse': 'no label', 'TN P-Tot': 'no label', 'kodeJOIN': 'no label', 'TN Ca': 'no label', });
+lyr_AnalisaTanahK_5.set('fieldLabels', {'fid': 'no label', 'Id': 'no label', 'Persil': 'no label', 'Divisi': 'no label', 'Wilayah': 'no label', 'kode_join': 'no label', 'LUAS': 'no label', 'Ferotrap': 'no label', 'poi': 'no label', 'DN N': 'no label', 'DN P': 'no label', 'DN K': 'no label', 'DN Mg': 'no label', 'DN B': 'no label', 'DN Cu': 'no label', 'DN Zn': 'no label', 'DN Fe': 'no label', 'TN N': 'no label', 'TN OrgC': 'no label', 'TN C/N': 'no label', 'TN CEC': 'no label', 'TN Mg': 'no label', 'TN K': 'no label', 'TN K-Tot': 'no label', 'TN pH H2O': 'no label', 'TN P-Terse': 'no label', 'TN P-Tot': 'no label', 'kodeJOIN': 'no label', 'TN Ca': 'no label', });
+lyr_AnalisaTanahMg_6.set('fieldLabels', {'fid': 'no label', 'Id': 'no label', 'Persil': 'no label', 'Divisi': 'no label', 'Wilayah': 'no label', 'kode_join': 'no label', 'LUAS': 'no label', 'Ferotrap': 'no label', 'poi': 'no label', 'DN N': 'no label', 'DN P': 'no label', 'DN K': 'no label', 'DN Mg': 'no label', 'DN B': 'no label', 'DN Cu': 'no label', 'DN Zn': 'no label', 'DN Fe': 'no label', 'TN N': 'no label', 'TN OrgC': 'no label', 'TN C/N': 'no label', 'TN CEC': 'no label', 'TN Mg': 'no label', 'TN K': 'no label', 'TN K-Tot': 'no label', 'TN pH H2O': 'no label', 'TN P-Terse': 'no label', 'TN P-Tot': 'no label', 'kodeJOIN': 'no label', 'TN Ca': 'no label', });
+lyr_AnalisaTanahCa_7.set('fieldLabels', {'fid': 'no label', 'Id': 'no label', 'Persil': 'no label', 'Divisi': 'no label', 'Wilayah': 'no label', 'kode_join': 'no label', 'LUAS': 'no label', 'Ferotrap': 'no label', 'poi': 'no label', 'DN N': 'no label', 'DN P': 'no label', 'DN K': 'no label', 'DN Mg': 'no label', 'DN B': 'no label', 'DN Cu': 'no label', 'DN Zn': 'no label', 'DN Fe': 'no label', 'TN N': 'no label', 'TN OrgC': 'no label', 'TN C/N': 'no label', 'TN CEC': 'no label', 'TN Mg': 'no label', 'TN K': 'no label', 'TN K-Tot': 'no label', 'TN pH H2O': 'no label', 'TN P-Terse': 'no label', 'TN P-Tot': 'no label', 'kodeJOIN': 'no label', 'TN Ca': 'no label', });
+lyr_AnalisaTanahCEC_8.set('fieldLabels', {'fid': 'no label', 'Id': 'no label', 'Persil': 'no label', 'Divisi': 'no label', 'Wilayah': 'no label', 'kode_join': 'no label', 'LUAS': 'no label', 'Ferotrap': 'no label', 'poi': 'no label', 'DN N': 'no label', 'DN P': 'no label', 'DN K': 'no label', 'DN Mg': 'no label', 'DN B': 'no label', 'DN Cu': 'no label', 'DN Zn': 'no label', 'DN Fe': 'no label', 'TN N': 'no label', 'TN OrgC': 'no label', 'TN C/N': 'no label', 'TN CEC': 'no label', 'TN Mg': 'no label', 'TN K': 'no label', 'TN K-Tot': 'no label', 'TN pH H2O': 'no label', 'TN P-Terse': 'no label', 'TN P-Tot': 'no label', 'kodeJOIN': 'no label', 'TN Ca': 'no label', });
+lyr_AnalisaTanahCN_9.set('fieldLabels', {'fid': 'no label', 'Id': 'no label', 'Persil': 'no label', 'Divisi': 'no label', 'Wilayah': 'no label', 'kode_join': 'no label', 'LUAS': 'no label', 'Ferotrap': 'no label', 'poi': 'no label', 'DN N': 'no label', 'DN P': 'no label', 'DN K': 'no label', 'DN Mg': 'no label', 'DN B': 'no label', 'DN Cu': 'no label', 'DN Zn': 'no label', 'DN Fe': 'no label', 'TN N': 'no label', 'TN OrgC': 'no label', 'TN C/N': 'no label', 'TN CEC': 'no label', 'TN Mg': 'no label', 'TN K': 'no label', 'TN K-Tot': 'no label', 'TN pH H2O': 'no label', 'TN P-Terse': 'no label', 'TN P-Tot': 'no label', 'kodeJOIN': 'no label', 'TN Ca': 'no label', });
+lyr_AnalisaTanahOrgC_10.set('fieldLabels', {'fid': 'no label', 'Id': 'no label', 'Persil': 'no label', 'Divisi': 'no label', 'Wilayah': 'no label', 'kode_join': 'no label', 'LUAS': 'no label', 'Ferotrap': 'no label', 'poi': 'no label', 'DN N': 'no label', 'DN P': 'no label', 'DN K': 'no label', 'DN Mg': 'no label', 'DN B': 'no label', 'DN Cu': 'no label', 'DN Zn': 'no label', 'DN Fe': 'no label', 'TN N': 'no label', 'TN OrgC': 'no label', 'TN C/N': 'no label', 'TN CEC': 'no label', 'TN Mg': 'no label', 'TN K': 'no label', 'TN K-Tot': 'no label', 'TN pH H2O': 'no label', 'TN P-Terse': 'no label', 'TN P-Tot': 'no label', 'kodeJOIN': 'no label', 'TN Ca': 'no label', });
+lyr_AnalisaTanahN_11.set('fieldLabels', {'fid': 'no label', 'Id': 'no label', 'Persil': 'no label', 'Divisi': 'no label', 'Wilayah': 'no label', 'kode_join': 'no label', 'LUAS': 'no label', 'Ferotrap': 'no label', 'poi': 'no label', 'DN N': 'no label', 'DN P': 'no label', 'DN K': 'no label', 'DN Mg': 'no label', 'DN B': 'no label', 'DN Cu': 'no label', 'DN Zn': 'no label', 'DN Fe': 'no label', 'TN N': 'no label', 'TN OrgC': 'no label', 'TN C/N': 'no label', 'TN CEC': 'no label', 'TN Mg': 'no label', 'TN K': 'no label', 'TN K-Tot': 'no label', 'TN pH H2O': 'no label', 'TN P-Terse': 'no label', 'TN P-Tot': 'no label', 'kodeJOIN': 'no label', 'TN Ca': 'no label', });
+lyr_AnalisaDaunFe_12.set('fieldLabels', {'fid': 'no label', 'Id': 'no label', 'Persil': 'no label', 'Divisi': 'no label', 'Wilayah': 'no label', 'kode_join': 'no label', 'LUAS': 'no label', 'Ferotrap': 'no label', 'poi': 'no label', 'DN N': 'no label', 'DN P': 'no label', 'DN K': 'no label', 'DN Mg': 'no label', 'DN B': 'no label', 'DN Cu': 'no label', 'DN Zn': 'no label', 'DN Fe': 'no label', 'TN N': 'no label', 'TN OrgC': 'no label', 'TN C/N': 'no label', 'TN CEC': 'no label', 'TN Mg': 'no label', 'TN K': 'no label', 'TN K-Tot': 'no label', 'TN pH H2O': 'no label', 'TN P-Terse': 'no label', 'TN P-Tot': 'no label', 'kodeJOIN': 'no label', 'TN Ca': 'no label', });
+lyr_AnalisaDaunZn_13.set('fieldLabels', {'fid': 'no label', 'Id': 'no label', 'Persil': 'no label', 'Divisi': 'no label', 'Wilayah': 'no label', 'kode_join': 'no label', 'LUAS': 'no label', 'Ferotrap': 'no label', 'poi': 'no label', 'DN N': 'no label', 'DN P': 'no label', 'DN K': 'no label', 'DN Mg': 'no label', 'DN B': 'no label', 'DN Cu': 'no label', 'DN Zn': 'no label', 'DN Fe': 'no label', 'TN N': 'no label', 'TN OrgC': 'no label', 'TN C/N': 'no label', 'TN CEC': 'no label', 'TN Mg': 'no label', 'TN K': 'no label', 'TN K-Tot': 'no label', 'TN pH H2O': 'no label', 'TN P-Terse': 'no label', 'TN P-Tot': 'no label', 'kodeJOIN': 'no label', 'TN Ca': 'no label', });
+lyr_AnalisaDaunCu_14.set('fieldLabels', {'fid': 'no label', 'Id': 'no label', 'Persil': 'no label', 'Divisi': 'no label', 'Wilayah': 'no label', 'kode_join': 'no label', 'LUAS': 'no label', 'Ferotrap': 'no label', 'poi': 'no label', 'DN N': 'no label', 'DN P': 'no label', 'DN K': 'no label', 'DN Mg': 'no label', 'DN B': 'no label', 'DN Cu': 'no label', 'DN Zn': 'no label', 'DN Fe': 'no label', 'TN N': 'no label', 'TN OrgC': 'no label', 'TN C/N': 'no label', 'TN CEC': 'no label', 'TN Mg': 'no label', 'TN K': 'no label', 'TN K-Tot': 'no label', 'TN pH H2O': 'no label', 'TN P-Terse': 'no label', 'TN P-Tot': 'no label', 'kodeJOIN': 'no label', 'TN Ca': 'no label', });
+lyr_AnalisaDaunB_15.set('fieldLabels', {'fid': 'no label', 'Id': 'no label', 'Persil': 'no label', 'Divisi': 'no label', 'Wilayah': 'no label', 'kode_join': 'no label', 'LUAS': 'no label', 'Ferotrap': 'no label', 'poi': 'no label', 'DN N': 'no label', 'DN P': 'no label', 'DN K': 'no label', 'DN Mg': 'no label', 'DN B': 'no label', 'DN Cu': 'no label', 'DN Zn': 'no label', 'DN Fe': 'no label', 'TN N': 'no label', 'TN OrgC': 'no label', 'TN C/N': 'no label', 'TN CEC': 'no label', 'TN Mg': 'no label', 'TN K': 'no label', 'TN K-Tot': 'no label', 'TN pH H2O': 'no label', 'TN P-Terse': 'no label', 'TN P-Tot': 'no label', 'kodeJOIN': 'no label', 'TN Ca': 'no label', });
+lyr_AnalisaDaunMg_16.set('fieldLabels', {'fid': 'no label', 'Id': 'no label', 'Persil': 'no label', 'Divisi': 'no label', 'Wilayah': 'no label', 'kode_join': 'no label', 'LUAS': 'no label', 'Ferotrap': 'no label', 'poi': 'no label', 'DN N': 'no label', 'DN P': 'no label', 'DN K': 'no label', 'DN Mg': 'no label', 'DN B': 'no label', 'DN Cu': 'no label', 'DN Zn': 'no label', 'DN Fe': 'no label', 'TN N': 'no label', 'TN OrgC': 'no label', 'TN C/N': 'no label', 'TN CEC': 'no label', 'TN Mg': 'no label', 'TN K': 'no label', 'TN K-Tot': 'no label', 'TN pH H2O': 'no label', 'TN P-Terse': 'no label', 'TN P-Tot': 'no label', 'kodeJOIN': 'no label', 'TN Ca': 'no label', });
+lyr_AnalisaDaunK_17.set('fieldLabels', {'fid': 'no label', 'Id': 'no label', 'Persil': 'no label', 'Divisi': 'no label', 'Wilayah': 'no label', 'kode_join': 'no label', 'LUAS': 'no label', 'Ferotrap': 'no label', 'poi': 'no label', 'DN N': 'no label', 'DN P': 'no label', 'DN K': 'no label', 'DN Mg': 'no label', 'DN B': 'no label', 'DN Cu': 'no label', 'DN Zn': 'no label', 'DN Fe': 'no label', 'TN N': 'no label', 'TN OrgC': 'no label', 'TN C/N': 'no label', 'TN CEC': 'no label', 'TN Mg': 'no label', 'TN K': 'no label', 'TN K-Tot': 'no label', 'TN pH H2O': 'no label', 'TN P-Terse': 'no label', 'TN P-Tot': 'no label', 'kodeJOIN': 'no label', 'TN Ca': 'no label', });
+lyr_AnalisaDaunP_18.set('fieldLabels', {'fid': 'no label', 'Id': 'no label', 'Persil': 'no label', 'Divisi': 'no label', 'Wilayah': 'no label', 'kode_join': 'no label', 'LUAS': 'no label', 'Ferotrap': 'no label', 'poi': 'no label', 'DN N': 'no label', 'DN P': 'no label', 'DN K': 'no label', 'DN Mg': 'no label', 'DN B': 'no label', 'DN Cu': 'no label', 'DN Zn': 'no label', 'DN Fe': 'no label', 'TN N': 'no label', 'TN OrgC': 'no label', 'TN C/N': 'no label', 'TN CEC': 'no label', 'TN Mg': 'no label', 'TN K': 'no label', 'TN K-Tot': 'no label', 'TN pH H2O': 'no label', 'TN P-Terse': 'no label', 'TN P-Tot': 'no label', 'kodeJOIN': 'no label', 'TN Ca': 'no label', });
+lyr_AnalisaDaunN_19.set('fieldLabels', {'fid': 'no label', 'Id': 'no label', 'Persil': 'no label', 'Divisi': 'no label', 'Wilayah': 'no label', 'kode_join': 'no label', 'LUAS': 'no label', 'Ferotrap': 'no label', 'poi': 'no label', 'DN N': 'no label', 'DN P': 'no label', 'DN K': 'no label', 'DN Mg': 'no label', 'DN B': 'no label', 'DN Cu': 'no label', 'DN Zn': 'no label', 'DN Fe': 'no label', 'TN N': 'no label', 'TN OrgC': 'no label', 'TN C/N': 'no label', 'TN CEC': 'no label', 'TN Mg': 'no label', 'TN K': 'no label', 'TN K-Tot': 'no label', 'TN pH H2O': 'no label', 'TN P-Terse': 'no label', 'TN P-Tot': 'no label', 'kodeJOIN': 'no label', 'TN Ca': 'no label', });
+lyr_LAPORANRUTINBatasWilayah_20.set('fieldLabels', {'fid': 'no label', 'Id': 'no label', });
+lyr_LAPORANRUTINAreaHCVRSUPPKB_21.set('fieldLabels', {'fid': 'no label', 'Tuplah': 'no label', 'Sungai': 'no label', 'Makam': 'no label', 'Rawa': 'no label', 'Keterangan': 'no label', 'HCV_1': 'no label', 'HCV_2': 'no label', 'HCV_3': 'no label', 'HCV_4': 'no label', 'HCV_5': 'no label', 'HCV_6': 'no label', 'Indeks': 'no label', 'Entitas': 'no label', 'Luas': 'no label', 'Wilayah': 'no label', });
+lyr_LAPORANRUTINAreaHCVRSUPPKB_21.on('precompose', function(evt) {
+    evt.context.globalCompositeOperation = 'normal';
+});
