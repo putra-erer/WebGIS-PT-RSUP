@@ -57,7 +57,7 @@ var style_AnalisaTanahPTersedia_1 = function(feature, resolution){
     };
     
     var labelText = ""; 
-    var value = feature.get("TN P-Tot");
+    var value = feature.get("TN P-Terse");
     var labelFont = "7.800000000000001px \'Open Sans\', sans-serif";
     var labelFill = "#323232";
     var bufferColor = "#fafafa";
